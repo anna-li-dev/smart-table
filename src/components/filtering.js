@@ -29,11 +29,12 @@ export function initFiltering(elements, indexes) {
 
             const field = action.dataset.field;
             if (field in state) {
-                if (Array.isArray(state[field])) {
-                    state[field] = [];
-                } else {
-                    state[field] = '';
-                }
+                state[field] = '';
+                // if (Array.isArray(state[field])) {
+                //     state[field] = [];
+                // } else {
+                //     state[field] = '';
+                // }
             }
 
         }

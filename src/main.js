@@ -28,6 +28,7 @@ function collectState() {
 
     return {                                            // расширьте существующий return вот так
         ...state,
+        total: [state.totalFrom, state.totalTo],
         rowsPerPage,
         page
     };
